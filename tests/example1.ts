@@ -34,7 +34,7 @@ describe("example1", () => {
     const account = await program.account.myAccount.fetch(myAccount.publicKey);
 
     // Check it's state was initialized.
-    // assert.ok(account.data.eq(new anchor.BN(1234)));
+    assert.ok(account.data.eq(new anchor.BN(1234)));
 
     // Store the account for the next test.
     _myAccount = myAccount;
