@@ -7,8 +7,8 @@ pub mod example1 {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>, data: u64) -> Result<()> {
-        // let my_account = &mut ctx.accounts.my_account;
-        // my_account.data = data;
+        let my_account = &mut ctx.accounts.my_account;
+        my_account.data = data;
         Ok(())
     }
 
